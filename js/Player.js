@@ -9,7 +9,8 @@ class Player {
 
     /**
      * Creates token objects for player
-     * @param {integer} num - Number of token objects to be created 
+     * @param {integer} num - Number of token objects to be created
+     * @return {array} tokens - an array of new token objects 
      */
 
     createTokens(num) {

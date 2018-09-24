@@ -24,10 +24,12 @@ class Game {
         return players;
     }
 
-    /*
-    Gets game ready for play
-    */
+    /**
+     * Begins game
+     */
    startGame(){
-
+    this.board.drawHTMLBoard();
+    this.activePlayer.activeToken.drawHTMLToken();
+    this.ready = true;
    }
 }
