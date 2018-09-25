@@ -134,4 +134,14 @@ class Game {
     
         return win;
     }
+
+    /**
+     * Switches active player.
+     */
+    switchPlayers(){
+        for (let player of this.players) {
+            player.active = player.active === true ? false : true;
+        }
+    }
+    
  }
