@@ -8,6 +8,18 @@ class Space {
         this.radius = this.diameter/2;
     }
     
+     /**
+     * Checks if space has an associated token to find its owner
+     * @return {(null|Object)} Retuns null or the owner object of the space's associated token.
+     */
+    get owner(){
+        if (this.token === null) {
+            return null;
+        } else {
+            return this.token.owner;
+        }
+    }
+
     /**
      * Draws SVG space
      */
@@ -29,17 +41,5 @@ class Space {
      */
     mark(token){
         this.token = token;
-    }
-
-    /**
-     * Checks if space has an associated token to find its owner
-     * @return {(null|Object)} Retuns null or the owner object of the space's associated token.
-     */
-    get owner(){
-        if (this.token === null) {
-            return null;
-        } else {
-            return this.token.owner;
-        }
     }
 }
