@@ -23,6 +23,9 @@ class Game {
         const players = [new Player('Player 1', 1, '#e15258', true),
                          new Player('Player 2', 2, '#000000')];
         return players;
+
+        var playerOneName = prompt("Enter Player 1 Name.");
+        var playerTwoName = prompt("Enter Player 2 Name.");
     }
     
     

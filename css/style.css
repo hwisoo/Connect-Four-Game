@@ -77,6 +77,16 @@ body {
 	opacity: 0;
 }
 
+#playerOne {
+    display: block;
+    margin-left : -900px;
+}
+
+#playerTwo {
+    display: block;
+    margin-right: 800px;
+}
+
 .token {
     width: 60px;
     height: 60px;
