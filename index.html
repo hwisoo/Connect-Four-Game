@@ -4,13 +4,14 @@
         <title>Connect Four!</title>
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+        
     </head>
 
     <body>
     	<button id = "begin-game">
     		Start
     	</button>
-    
+        
     	<div id = "game-scene">
             <div id = "play-area">
                 
@@ -30,7 +31,7 @@
             
             
                 <div id = "game-board-underlay">
-                        <div id="playerOne">Player 1</div>
+                        <div id="playerOne"></div>
                     <div id = "token" data-column = "0">
                     </div>
                 </div>
@@ -55,7 +56,7 @@
                     <div class = "stand-attachment right">
                     </div>
                 </div>
-                <div id="playerTwo">Player2</div>
+                <div id="playerTwo"></div>
         
                 <div style = "clear:both"></div>
             </div>
@@ -67,7 +68,14 @@
 </html>
 
 
-    
+<script>
+        
+        var playerOneName = prompt("Enter Player 1 Name.");
+        var playerTwoName = prompt("Enter Player 2 Name.");
+
+        document.getElementById("playerOne").innerHTML = playerOneName;
+        document.getElementById("playerTwo").innerHTML = playerTwoName;
+        </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src = "js/Game.js"></script>
