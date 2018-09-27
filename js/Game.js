@@ -24,8 +24,6 @@ class Game {
                          new Player('Player 2', 2, '#000000')];
         return players;
 
-        playerOneName = prompt("Enter Player 1 Name.");
-        playerTwoName = prompt("Enter Player 2 Name.");
     }
     
     
@@ -36,6 +34,12 @@ class Game {
         this.board.drawHTMLBoard();
         this.activePlayer.activeToken.drawHTMLToken();
         this.ready = true;
+
+        var playerOneName = prompt("Enter Player 1 Name.");
+        var playerTwoName = prompt("Enter Player 2 Name.");
+
+        document.getElementById("playerOne").innerHTML = playerOneName;
+        document.getElementById("playerTwo").innerHTML = playerTwoName;
     }
 	
 	

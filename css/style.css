@@ -78,11 +78,13 @@ body {
 }
 
 #playerOne {
+    color: rgb(225, 82, 88);
     display: block;
     margin-left : -900px;
 }
 
 #playerTwo {
+    color: rgb(0, 0, 0);
     display: block;
     margin-right: 800px;
 }
