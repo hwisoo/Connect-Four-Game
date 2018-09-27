@@ -70,5 +70,12 @@ class Token {
         $(this.htmlToken).animate({
             top: (target.y * target.diameter)
         }, 750, 'easeOutBounce', reset);
+
+        var tokenSound;
+        tokenSound = new Audio("assets/drop_on_table.mp3");
+        setTimeout(soundDelay, 200);
+        function soundDelay(){
+            tokenSound.play();
+        }
 	}
 }
