@@ -188,6 +188,13 @@ class Game {
     gameOver(message) {
         document.getElementById('game-over').style.display = 'block';
         document.getElementById('game-over').textContent = message;
+
+        var gameOverSound;
+        gameOverSound = new Audio("assets/gameover.mp3");
+        setTimeout(soundDelay, 200);
+        function soundDelay(){
+            gameOverSound.play();
+        }
     }
 
  }
