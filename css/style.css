@@ -46,6 +46,11 @@ body {
     font-size: 25px;
 }
 
+#begin-game:hover {
+    width:225px;
+    font-size: 30px;
+}
+
 /* BOARD AND PIECES */
 #game-board {
 	position: relative;
