@@ -191,10 +191,8 @@ class Game {
 
         var gameOverSound;
         gameOverSound = new Audio("assets/gameover.mp3");
-        setTimeout(soundDelay, 200);
-        function soundDelay(){
-            gameOverSound.play();
-        }
+        gameOverSound.play();
+        
     }
 
  }
